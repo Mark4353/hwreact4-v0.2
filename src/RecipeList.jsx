@@ -3,10 +3,11 @@ import recipes from "./recipes";
 import Difficulty from "./Difficulty";
 
 const Container = styled.div`
-  width: 500px;
+  width: 1300px;
     margin: 0 auto;
   padding: 20px;
-  display: grid;
+  display: flex;
+  flex-direction: row;
   gap: 20px;
 `;
 
@@ -19,6 +20,7 @@ padding: 6px;
   transition: transform 0.2s;
   &:hover {
     transform: translateY(-5px);
+    cursor: pointer;
   }
 `;
 
@@ -34,16 +36,22 @@ const Info = styled.div`
 
 const Title = styled.h3`
   margin: 0 0 8px;
+  text-align: center;
 `;
 
 const Meta = styled.p`
   margin: 4px 0;
   color: #555;
+  background-color: rgba(245, 223, 26, 0.98);
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 25px;
 `;
 
 const DifficultyWrapper = styled.div`
   margin-top: 12px;
 `;
+
 
 const RecipeList = () => (
   <Container>

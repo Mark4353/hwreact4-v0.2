@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: rgba(245, 223, 26, 0.98);
+    background-color: rgba(247, 237, 150, 1);
     color: #333;
   }
 
